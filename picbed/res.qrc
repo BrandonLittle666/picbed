@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/">
+        <file>image/picbed.svg</file>
+        <file>image/picbed.png</file>
+        <file>image/picbed.ico</file>
+        <file>image/info.svg</file>
+        <file>image/warning.svg</file>
+        <file>image/error.svg</file>
+        <file>image/clipboard-96.png</file>
+        <file>image/settings.png</file>
+        <file>image/exit.png</file>
+        <file>image/restart.png</file>
+        <file>image/clear-cache.png</file>
+        <file>image/upload.png</file>
+    </qresource>
+</RCC>

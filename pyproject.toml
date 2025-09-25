@@ -1,0 +1,32 @@
+[project]
+name = "picbed"
+version = "1.0.0"
+description = "Simple S3-backed image bed manager with PySide6 UI"
+requires-python = ">=3.11"
+dependencies = [
+  "PySide6>=6.6",
+  "python-dotenv>=1.0",
+  "loguru>=0.7",
+  "nuitka>=2.7.14",
+  "pywin32>=311 ; sys_platform == 'win32'",
+  "psutil>=7.1.0",
+  "uuid7>=0.1.0",
+  "pympler>=1.1",
+  "pillow>=11.3.0",
+  "boto3>=1.40.34",
+]
+
+[build-system]
+requires = ["hatchling>=1.18"]
+build-backend = "hatchling.build"
+
+[[tool.uv.index]]
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+default = true
+
+[tool.uv]
+dev-dependencies = [
+  "boto3-stubs[s3]>=1.34",
+]
+
+
