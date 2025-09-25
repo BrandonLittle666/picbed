@@ -33,8 +33,10 @@
 
 1. 下载仓库：
 
-    直接下载整个仓库文件, 解压并进入到解压后的目录
-
+   ```
+   git clone https://github.com/BrandonLittle666/picbed.git
+   cd picbed
+   ```
 2. 安装依赖：
 
 ```bash
@@ -65,15 +67,30 @@ uv run main.py
 
 支持以下占位符：
 
-- `{year}` - 年份
-- `{month}` - 月份
-- `{day}` - 日期
-- `{hour}` - 小时
-- `{minute}` - 分钟
-- `{second}` - 秒
-- `{uuid}` - UUID
-- `{timestamp}` - 时间戳
-- `{random}` - 随机字符串
+- `year`
+- `month`
+- `day`
+- `hour`
+- `minute`
+- `second`
+- `millisecond`
+- `timestamp`
+- `timestampMS`
+- `fullName`, 不含扩展名
+- `fileName`, 不含扩展名
+- `extName`, 例如 `png`
+- `md5`
+- `sha1`
+- `sha256`
+- `randstr`, 可以通过 `:count` 指定字符数, 例如 `randstr:5`
+- `randnum`, 可以通过 `:count` 指定数量, 例如 `randnum:5`
+
+对于上传后复制到剪切板, 还支持一下占位符:
+- `key`, 上传后文件名(不含目录结构)
+- `fullKey`, 上传后文件名(含目录结构)
+- `bucket`, 上传的存储桶
+- `endpoint`, 上传的服务器地址
+- `prefix`, 上传时设定的前缀
 
 ## 使用方法
 
